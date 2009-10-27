@@ -1,0 +1,11 @@
+Describe MoniPrombles here.
+
+ * how can I delete a file ?
+I choose ''action->delete page'', but it is still in
+{{{
+.../moin-1.8.5/wiki/data/pages
+}}}
+
+ * go back to ''FrontPage''?
+I definetely need a way to go to the parent-level page, and to homepage with one click
+maybe I can just add sth like  FrontPage, haha I don't know

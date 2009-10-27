@@ -1,0 +1,24 @@
+son of LinuxUsage
+
+== shutdown ==
+ 1. 
+ {{{
+ pet@girl:~$ sudo vim /etc/sudoers
+ }}}
+ 1. now add one line
+ {{{
+ pet ALL=(ALL)NOPASSWD: ALL
+ }}}
+ 1. now I can "sudo -i" without typing password
+ 1. so I
+ {{{
+ pet@girl:~$ sudo vim /usr/bin/gohome 
+ }}}
+ and have this in this file
+ {{{
+ sudo init 0
+ }}}
+ 1. so next time I want to shutdown the  machine, all I need is
+ {{{
+ pet@girl:~$ gohome 
+ }}}

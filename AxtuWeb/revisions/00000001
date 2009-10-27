@@ -1,0 +1,48 @@
+son of FrontPage
+
+AxtuWeb is the well organized stuff out of AxtuDebug
+<<TableOfContents>>
+= Welcom to Project AXTU =
+
+== Intro ==
+
+AXTU is short for "Asianux TSN Updater"
+
+TSN is in turn short for "Technical Support Network"
+
+== Getting Started ==
+
+AboutThisDoc
+=== axtu ===
+
+ 1. SuccessLog
+ 1. AxtuSteps
+ 1. BlackList
+ 1. HowAxtuUseAktk 
+
+Auth Client
+
+   1. On Yum
+   2. hwanii_auth
+   3. make_install 
+
+Auth Server
+apache
+
+   1. auth_mysql
+   2. open auth area
+   3. db 
+
+mysql
+
+   1. clone155
+   2. customerdb
+   3. tips
+   4. basics 
+
+General Issues
+
+   1. port
+   2. corn
+   3. ak
+   4. i18n 

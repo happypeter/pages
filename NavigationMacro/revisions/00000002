@@ -1,0 +1,45 @@
+son of MoinHacking
+
+Macro
+
+{{{
+<<Navigation(slides)>>
+}}}
+
+does not work
+
+----
+
+so I  
+
+{{{
+pet@girl:~/moin-1.8.5/MoinMoin/macro$ vim Navigation.py
+}}}
+
+{{{
+def _getParent(pagename):
+    """ Return parent of pagename.
+    """
+    print "_getParent------peter:-----pagename---"+pagename
+    pos = pagename.rfind('/')
+    if pos >= 0:
+        return pagename[:pos]
+    return None
+}}}
+
+but 
+
+{{{
+self.pagename = self.macro.formatter.page.page_name
+}}}
+simply gives the file name with no '/', so moin can not find the parent page
+---------
+one trick is
+{{{
+--- def do_slides(self, root=None):
++++ def do_slides(self, root="FrontPage"):
+}}}
+then the Macro works, at least partly
+
+----
+MAYBE : this is not a bug since all pages are eqaul in ''.../data''

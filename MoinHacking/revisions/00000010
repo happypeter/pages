@@ -1,0 +1,73 @@
+son of FrontPage
+
+<<TableOfContents>>
+
+Here we care about the implematation of Moin, in order to do some modification
+
+user-level general issues can be found at DocHowto
+
+== Tech Points ==
+ * xmlrpc
+
+http://en.wikipedia.org/wiki/MoinMoin
+
+MoinMoin also allows synchronization of contents from instance to instance[4] via XML-RPC and therefore allows distributed offline editing.
+
+ * wiki format (parser)->(formatter) html/docbook
+
+below is from  http://en.wikipedia.org/wiki/Moinmoin
+
+{{{
+MoinMoin supports plugins and can be extended via Macros and Actions. It also uses the idea of separate parsers (e.g. for parsing the wiki syntax) and formatters (e.g. for outputting HTML code) with a SAX-like interface between the two. The idea is that if you want to be able to output DocBook instead of HTML, you only need to write a docbook-formatter that implements the formatter interface, and all parsers that use the interface will automatically be supported.
+}}}
+== What I need to backup on earth ==
+=== study ===
+Now the problem is when I run ''git add .'' and ''git commit'', lots of run-time tmp files is added
+,such as 
+{{{
+cache/
+xxx.pyc
+edit-lock
+}}}
+So below I did a test to see what is the part I really need to backup
+{{{
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$ ls
+BadContent
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$ cp -rf /home/pet/github/moin-1.8.5/wiki/data/pages/* .
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$ ls
+AddAuth    AxtuWeb     DocHowto      GetMethod       HwaniiPpt           MoinTips      OnYum              PowerfulTemplete  WhatIsGood
+AuthMysql  BadContent  DownLoad      HaniiPpt        KernelRelatedIssue  MoniPrombles  OpenAuthMysqlArea  SuccessLog        WorkNotes
+AxtuDebug  BlackList   EnglishStudy  HowAxtuUseAktk  MakeInstall         NoteTip       PackageKit         UbuntuJoke        WtecImplementation
+AxtuSteps  CreatRepo   FrontPage     HwaniiAuth      MoinHacking         ObsoleteTag   PlugIn             UnclassifiedTips  YumHacking
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$ ls HwaniiPpt/
+cache  current  edit-lock  edit-log  revisions
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$ rm -rf */cache
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$ rm -rf */edit-lock
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$ ls HwaniiPpt/
+current  edit-log  revisions
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$
+}}}
+what I have done above is actually trying to use what is really  necessary
+{{{
+pet@pet-desktop:~/Desktop/moin-1.8.5/wiki/data/pages$ ls HwaniiPpt/
+current  edit-log  revisions
+}}}
+in a new moni-tree, to see if all my pages still works or not.
+The answer is yes, which means I only need to back up the '''necessary''' part.
+=== action ===
+so I can
+ * backup only ''.../wiki/data/page/''
+ * write a shell script to 
+   * remove tmp files in ''.../page''
+   * backup only the diff of all the revisons
+== What really happens during you delete a page ==
+
+when you click ''action->delete this page'', what is done is actually
+
+ * adding(rather then removing) a newer version in ''edit-log'', and ''current'' is update to this version
+ * special things about this version are:
+  * no corresponding page for it in ''revisions/'', therefore on the web page shows a grey link, like the page does not exist at all
+  * when you create again this page, which means you have another un-empty version of top of this version, it is marked ''SAVENEW'', rather then usual ''SAVE'' 
+ * if you go to ""Recent Changes"" and check the revision history, you have all the older versions(before you do the page deletion) available
+== Bugs ==
+ * NavigationMacro

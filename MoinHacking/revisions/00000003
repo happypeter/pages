@@ -1,0 +1,14 @@
+son of FrontPage
+<<TableOfContents>>
+Here we care about the implematation of Moin, in order to do some modification
+user-level general issues can be found at DocHowto
+
+== Tech Points ==
+
+ * xmlrpc  
+
+http://en.wikipedia.org/wiki/MoinMoin
+
+MoinMoin also allows synchronization of contents from instance to instance[4] via XML-RPC and therefore allows distributed offline editing.
+
+ * wiki format (parser)->(formatter) html/docbook

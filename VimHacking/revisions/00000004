@@ -1,0 +1,28 @@
+son of FrontPage
+
+<<Navigation(slides)>>
+
+== gvimtutor ==
+run this in ubuntu
+
+{{{
+pet@girl:~$ gvimtutor
+}}}
+then I learned the below tips
+
+{{{
+0 to the beginning of this line
+$ to the end of this line
+}}}
+{{{
+p not only work for yw y$
+but also dd 2dd
+}}}
+{{{
+** Type  %  to find a matching ),], or } . **
+}}}
+ignore case during searching
+
+{{{
+:set ic
+}}}

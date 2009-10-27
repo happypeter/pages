@@ -1,0 +1,101 @@
+son of WorkNotes
+
+<<TableOfContents>>
+
+= Tech related =
+== spcewalk ==
+{{{
+url:    https://10.1.0.76/rhn/
+id:     yuzhu
+pwd: abc123
+}}}
+if you have any question let me know,regards!
+== IP_WE_NEED ==
+>>>DHCP
+
+1. Pierrik
+Laptop:    1
+Desktop:  0
+Vm:         2
+
+2. Hwanii
+Laptop:      1
+Desktop:     0
+Vm:            4
+
+3. XueHong
+Laptop:     1
+Desktop:    0
+Vmware:
+
+4. Jiuxing
+Laptop: 1
+Desktop:
+Vmware:
+
+5. ZhuYu
+Laptop:  1
+Desktop:
+Vmware: 2
+
+6. Peter
+Laptop: 1
+Desktop:
+Vmware: 3
+
+7. New comers(two guys)
+
+Laptop:  2
+Desktop:
+Vmware: 5
+
+
+8. The desktop on my right side:
+Laptop: 1
+Desktop:
+Vmware:
+
+
+
+>>>Static IP
+
+***real machine
+230 : tsn_all
+245: build_env
+
+***VM
+
+244: Tsn test server
+246: TSN HQ Clone
+201: SDS dev server
+220: TSN HQ dev server
+219: AXTU test server
+155: AXTU test server
+
++ 3 more Static for futher use
+
+
+>>>SO
+tatal DHCP : 24 +5
+tatal STATIC: 11+5
+
+
+= Non-Tech =
+== approval ==
+intranet->approval->vacation
+
+add Ray+Shiery+SMT(Software maintainence team) as recipeants
+
+add Hwanii as first approver and then Jaykey as final approver
+== They way I work ==
+go the axtu-debug/ and see what a mess there!!!
+I need rules to devide all stuff here into distingushed parts, and yet well keep their connection.
+
+too much disorgnized contents, why is this?
+
+ 1. I hate bug-reports, they are always misleading and useless, but here I am now forced to work this way, so I need to mv someaxtu-debug content into bugzilla discussion, and backup my own bugs, and all the sds diff for each IP I sent. How comes I need to backupbugzilla and sds? it's the work of the company, but those guys are not smart enough to keep my data safe.
+ 1. biggest trouble is from sds&svn, I hate them with all my passion. I can not wirte commit log, how rediculous! But anyway I have git now, so big part of axtu-debug can go into git log and source code comments. comments are really important for me, but I won't commit them into svn. My git repo will be the final authrity for axtu development
+ 1. I really need to change the way I take debug notes, otherwise things will get undercontrol getting bigger.
+
+>>> some conclutions are really useful for later development, I will copy(maybe mv is better, since it is always stupid to maintain two copy of the same thing) it to doc-axtu/, such as HOW_AXTU_USE_AK and AXTU_GUI_WORK_FLOW, and this also means we do not need peki/study/axtu/ anymore.
+~                                                                                                                  

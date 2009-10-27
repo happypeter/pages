@@ -1,0 +1,32 @@
+ . son of  DocHowto
+
+<<TableOfContents>>
+
+= h1 =
+nice thing about this is that it is supported  well by ''Render as Docbook''
+
+== h21 ==
+== h22 ==
+{{{
+<<TableOfContents>>
+
+= h1 =
+nice thing about this is that it is supported  well by ''Render as Docbook''
+
+== h21 ==
+== h22 ==
+=== h3 ===
+ewdewdew
+}}}
+==== h4 =====
+
+<<DateTime(2004-07-16T19:17:35Z)>>
+
+}}}
+
+=== h3 ===
+ewdewdew
+
+==== h4 =====
+
+<<DateTime(2004-07-16T19:17:35Z)>>

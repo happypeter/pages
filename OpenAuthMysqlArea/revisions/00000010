@@ -1,0 +1,57 @@
+son of YumHacking
+<<TableOfContents>>
+== Steps ==
+1. goto
+{{{
+10.1.0.64/auth/asianux2/AXS3-RF/x86_64/
+}}}
+run $createrepo UPDATE
+
+2. goto
+ ''/etc/yum.repos.d/'' the FILE named 'asianux.repo'
+
+{{{
+[core]
+name=Asianux Server 3
+baseurl=http://peter:111111@10.1.0.64/auth/asianux2/AXS3-RF/x86_64/UPDATE/
+enabled=1
+gpgcheck=1
+gpgkey=file:///usr/share/doc/asianux-release/RPM-GPG-KEY
+}}}
+== test ==
+1. now the final test 
+{{{
+$yum list
+}}}
+works
+
+2. if
+{{{
+   ---baseurl=http://peter:111111@10.1.0.64/auth/asianux2/AXS3-RF/x86_64/UPDATE/
+   +++baseurl=http:///auth/asianux2/AXS3-RF/x86_64/UPDATE/
+}}}
+then
+
+{{{
+ HTTP Error 401: Authorization Required
+}}}
+
+== note ==
+
+careful about the cache, it will ruin your test, so do this, when things go strange
+
+{{{
+[root@dhcp08 yum]# rm -rf core/
+[root@dhcp08 yum]# pwd
+/var/cache/yum
+}}}
+
+== solution ==
+ 
+
+ 1. use auth-client get ak file and tk file, see AddAuth
+ 1. write python code get ak and tk, and modify this way 
+   {{{
+   baseurl=http://ak:tk@10.1.0.64/auth/asianux2/AXS3-RF/x86_64/UPDATE/ 
+   }}} 
+ 1. yum will work fine with the new url, like the test above goes, to do everything as it can be done with common url
