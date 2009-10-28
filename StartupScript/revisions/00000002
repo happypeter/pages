@@ -1,0 +1,14 @@
+son of FrontPage
+
+
+
+http://rob.pectol.com/startup_scriptbuilder/
+
+{{{
+root@girl:~# update-rc.d  peterd_startup.sh start  23 5 .
+update-rc.d: warning: /etc/init.d/peterd_startup.sh missing LSB information
+update-rc.d: see <http://wiki.debian.org/LSBInitScripts>
+ Adding system startup for /etc/init.d/peterd_startup.sh ...
+   /etc/rc5.d/S23peterd_startup.sh -> ../init.d/peterd_startup.sh
+root@girl:~# 
+}}}
