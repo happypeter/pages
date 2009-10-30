@@ -1,0 +1,34 @@
+Son of DocHowto
+<<TableOfContents>>
+== FAQ ==
+ * Why I see conflicts even I use just 2 secs to finish the page editing ?
+A: when you finish the editing, press save, then you want to edit more, you should not use firefox ''goback''
+you should click 'edit this page' again
+ * How can I stop Moin cleanly, since I can not kill the process by ctl+c?
+A: see KillMoin
+== small ==
+=== indention ===
+when you use 
+{{{
+  1.xxx
+ --{
+ hello
+ --}        NOTE: --} == }}}
+  1.xxx
+}}}
+
+abd it will show up like this
+ 1.xxx
+{{{
+hello
+}}}
+ 1.xxx
+
+and this is obvious not what we want, all the solution is a proceeding whitespace in lines between ''1.'' 
+
+=== macros ===
+there are at least two of them I must have
+{{{
+<<TableOfContents>>
+<<Navigation>>
+}}}

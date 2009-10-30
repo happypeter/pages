@@ -1,0 +1,18 @@
+FrontPage<<BR>>
+
+{{{
+for myFile in `dir` 
+do
+  echo $myFile 
+done
+}}}
+
+{{{ 
+
+echo `dir`   the output is all filenames in current dir 
+
+NOTE: the "`" is on the topleft of the key board, just under esc
+
+echo 'dir'   ............. string "dir"
+
+}}}
