@@ -1,0 +1,10 @@
+FrontPage<<BR>><<TableOfContents>>
+
+here I want to add vim as the editor for moin
+
+{{{
+import os
+os.system("vim cur_file") #current file means the file opened by Moin's own editor
+}}}
+
+I think I can also flash Moin's editor the moment vim quit.
