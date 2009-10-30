@@ -1,0 +1,25 @@
+FrontPage<<BR>><<TableOfContents>>
+
+here I want to add vim as the editor for moin
+
+so what is visible in editor is actually in a tmp file, it is only saved to the real page in data/pages/ when
+"Save Changes" is clicked.
+
+So now I need to find out where the tmp file is. 
+when client side user click "Edit(text)", I just add
+{{{
+import os
+os.system("vim cur_file") #current file means the file opened by Moin's own editor
+}}}
+
+I think I can also flash Moin's editor the moment vim quit.
+I add
+{{{
+gggggggg
+}}}
+to this page, and search in pet's home dir
+and found it is in
+{{{
+./.mozilla/firefox/mkyaxt0x.default/sessionstore.js
+}}}
+/!\ but this file only contains "ggggggg", everything else is not found.
