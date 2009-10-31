@@ -1,0 +1,11 @@
+son of VideoEdit
+
+Record desktop
+{{{
+$recordmydesktop --no-sound
+$ ffmpeg -i out.ogg out.flv
+}}}
+Cltr+C to stop
+{{{
+$recordmydesktop --no-sound -width 720 -height 576
+}}}
