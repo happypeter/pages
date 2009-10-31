@@ -1,0 +1,11 @@
+FrontPage<<BR>><<TableOfContents>>
+
+Rhythmbox is native player for ubuntu as for 9.04, 
+
+today I try 
+{{{
+root@girl:~# apt-get install banshee
+}}}
+
+and after this even though BanShee itself can not work,
+but mp3 decoder is installed, and RhythmBox now can not only play mp3, but also YouKu videos

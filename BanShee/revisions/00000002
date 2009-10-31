@@ -1,0 +1,11 @@
+## page was renamed from VideoDownload
+FrontPage<<BR>><<TableOfContents>>
+
+
+http://www.desktoplinux.com/articles/AT7150747782.html
+
+{{{
+root@girl:~# apt-get install banshee
+}}}
+installation done, 
+but end up with a error trying to run it
