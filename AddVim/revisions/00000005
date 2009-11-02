@@ -24,3 +24,7 @@ and found it is in
 }}}
 /!\ but this file only contains "ggggggg", everything else is not found.
 now it gets difficult.
+
+*** so I just give up finding some tmp file, below I just let vim open the real
+current file, and after vim quite, then moin editor will read the modified version of '''current''', this may produce some confusion when moin tries to generate diff, but basically it works.
+

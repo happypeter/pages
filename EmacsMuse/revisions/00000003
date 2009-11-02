@@ -1,0 +1,11 @@
+FrontPage
+
+{{{
+root@girl:~# apt-get install emacs
+
+root@girl:~# apt-get install muse-el
+}}}
+bhl    change plain text to wiki html ...
+
+ * EmacsUse
+http://mwolson.org/projects/EmacsMuse.html
