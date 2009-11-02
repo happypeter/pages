@@ -1,0 +1,44 @@
+FrontPage
+
+{{{
+root@girl:~# apt-get install emacs
+
+root@girl:~# apt-get install muse-el
+}}}
+bhl    change plain text to wiki html ...
+
+ * EmacsUse
+http://mwolson.org/projects/EmacsMuse.html
+
+
+
+check this http://www.linux.com/archive/feature/61208
+maybe I also need 
+{{{
+(add-to-list 'load-path "/home/scott/elisp/muse_latest/lisp")
+(require 'muse-mode)
+(require 'muse-html)
+(require 'muse-latex)
+
+---- /!\ '''Edit conflict - other version:''' ----
+
+== ubuntu ==
+http://mwolson.org/projects/DebianPackages.html
+
+---- /!\ '''Edit conflict - your version:''' ----
+
+---- /!\ '''End of edit conflict''' ----
+(require 'muse-texinfo)
+(require 'muse-docbook)
+(require 'muse-book)
+
+}}}
+
+in ''.emacs''
+
+and here
+http://mwolson.org/projects/EmacsMuse.html#sec3
+I can get ''muse_latest''
+
+== ubuntu ==
+http://mwolson.org/projects/DebianPackages.html
