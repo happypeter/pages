@@ -1,0 +1,17 @@
+FrontPage<<BR>><<TableOfContents>>
+
+To see which directories are in your load-path, type 
+{{{
+C-h v load-path 
+C-h t  get help 
+}}}
+
+{{{	
+C-x C-f   Find a file
+C-x C-s   Save the file
+          close without saving
+}}}
+
+ * Type C-x 1 to get rid of the buffer list.
+ * C-s start C-g quit
+ * Type C-x 1 (in the top window) to get rid of the bottom window.

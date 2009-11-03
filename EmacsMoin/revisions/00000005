@@ -1,0 +1,34 @@
+FrontPage<<BR>><<TableOfContents>>
+
+http://moinmo.in/EmacsForMoinMoin
+
+I am using emacs, poorly I can not use moin-mode now
+
+
+but I firstly failed to add moinmoin-mode, so I would like to try
+
+http://en.wikipedia.org/wiki/Wikipedia:Wikipedia-mode.el
+
+Solution:
+
+what is required (by ubuntu 9.04) is this file
+{{{
+root@girl:/etc/emacs/site-start.d# 50moin-el.el
+}}}
+
+with the contents
+{{{
+;; -*-emacs-lisp-*-
+;;
+;; Emacs startup file for the Debian GNU/Linux muse package
+;; Peter added this for moinmoin
+  (load "moinmoin-mode.el")
+}}}
+
+/!\  two ''.el'' files downloaded here 
+http://moinmo.in/EmacsForMoinMoin
+no modification is requied, just put them in to '''load-path '''
+
+
+
+* EmacsCommand
