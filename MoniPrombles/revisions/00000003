@@ -1,0 +1,20 @@
+Describe MoniPrombles here.
+
+ * how can I delete a file ?
+I choose ''action->delete page'', but it is still in
+{{{
+.../moin-1.8.5/wiki/data/pages
+}}}
+
+ * go back to ''FrontPage''?
+I definetely need a way to go to the parent-level page, and to homepage with one click
+maybe I can just add sth like  FrontPage, haha I don't know
+
+now i know EmacsUse, so as note-taking systerm moinmoin seems very defective:
+
+  * even the moin-mode works perfectly, I still need to use mouse to invoke emacs
+  * basic navigation is kind of OK, but if it is all done in text-mode, navigation can be faster
+  * so now I perfer to do thing within the frame of emacs, which means faster navigation, faster editing
+  * faster everything and awesomely many new fethers available through all kinds of mode and modes bonding
+  * but I need to gurantee muse format can be nicely trasfromed into, at least, html, 
+  * and it will be wonderful if other formats, like pdf docbook and moinmoin mediawiki ...
