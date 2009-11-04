@@ -1,0 +1,37 @@
+FrontPage<<BR>><<TableOfContents>>
+
+To see which directories are in your load-path, type 
+{{{
+C-h v load-path 
+C-h t  get help 
+}}}
+
+{{{	
+C-x C-f   Find a file
+C-x C-s   Save the file
+          close without saving
+}}}
+
+ * Type C-x 1 to get rid of the buffer list.
+ * C-s start C-g quit
+ * Type C-x 1 (in the top window) to get rid of the bottom window.
+ view-echo-area-messages  this command might be useful
+
+== face customization ==
+
+M-x list-faces-display
+
+{{{
+
+his is a customization buffer.
+`Raised' text indicates buttons; type RET or click mouse-1 to actuate one.
+Editing a setting changes only the text in the buffer.
+Use the setting's State button to set it or save changes in it.
+Saving a change normally works by editing your Emacs init file.
+}}}
+
+{{{
+M-x global-set-key
+}}}
+then C+m attach to moinmoin-mode
+it is useful

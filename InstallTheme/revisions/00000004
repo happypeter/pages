@@ -1,0 +1,39 @@
+FrontPage<<BR>><<TableOfContents>>
+
+== face customization ==
+{{{
+M-x list-faces-display
+}}}
+ 
+=== install twilight ===
+http://github.com/crafterm/twilight-emacs
+
+but this requires ''color-theme'', which used to be a ubuntu package
+'''emacs-color-themes'''
+
+but as I checked here
+
+http://packages.ubuntu.com/jaunty/editors/
+
+this package is no longer available in 9.04, must be provided by sth
+
+but I do not know
+
+ * install ''color-theme'' is actually easy:
+ 1. have ''.emacs'' like this
+ {{{
+(add-to-list 'load-path "/home/pet/color_theme_peter")
+(require 'color-theme)
+(color-theme-initialize)
+(load-file "~/.emacs.d/twilight-emacs/color-theme-twilight.el")
+(color-theme-twilight)
+ }}}
+ 1. natrually, I need this as well
+ {{{
+pet@girl:~/color_theme_peter$ ls
+color-theme.el  themes
+pet@girl:~/color_theme_peter$ ls themes/
+color-theme-example.el  color-theme-library.el
+pet@girl:~/color_theme_peter$ 
+ }}}
+resart emacs, it works :-)

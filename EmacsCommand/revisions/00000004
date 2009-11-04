@@ -1,0 +1,16 @@
+FrontPage<<BR>><<TableOfContents>>
+
+To see which directories are in your load-path, type 
+{{{
+C-h v load-path 
+}}}
+
+{{{ 
+view-echo-area-messages  shows all the startup info
+}}}
+
+{{{
+M-x global-set-key
+}}}
+
+:-) I can  attach ''Cltr+m'' to "moinmoin-mode"

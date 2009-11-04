@@ -1,0 +1,8 @@
+FrontPage<<BR>><<TableOfContents>>
+
+== face customization ==
+{{{
+M-x list-faces-display
+}}}
+=== install twilight ===
+http://github.com/crafterm/twilight-emacs

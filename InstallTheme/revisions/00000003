@@ -1,0 +1,20 @@
+FrontPage<<BR>><<TableOfContents>>
+
+== face customization ==
+{{{
+M-x list-faces-display
+}}}
+ 
+=== install twilight ===
+http://github.com/crafterm/twilight-emacs
+
+but this requires ''color-theme'', which used to be a ubuntu package
+'''emacs-color-themes'''
+
+but as I checked here
+
+http://packages.ubuntu.com/jaunty/editors/
+
+this package is no longer available in 9.04, must be provided by sth
+
+but I do not know

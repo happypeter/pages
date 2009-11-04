@@ -1,0 +1,51 @@
+son of LinuxUsage
+
+go here to check packages
+http://packages.ubuntu.com/jaunty/editors/
+
+
+== shutdown ==
+ 1. 
+ {{{
+ pet@girl:~$ sudo vim /etc/sudoers
+ }}}
+ 1. now add one line
+ {{{
+ pet ALL=(ALL)NOPASSWD: ALL
+ }}}
+ 1. now I can "sudo -i" without typing password
+ 1. so I
+ {{{
+ pet@girl:~$ sudo vim /usr/bin/gohome 
+ }}}
+ and have this in this file
+ {{{
+ sudo init 0
+ }}}
+ 1. so next time I want to shutdown the  machine, all I need is
+ {{{
+ pet@girl:~$ gohome 
+ }}}
+
+== Format disk ==
+ 1. 
+ {{{
+$cd /dev
+$ls s*
+ }}}
+
+ 1. plug mp3
+ {{{
+$ls s*
+ }}}
+ now i see a sdb is added here
+
+ 1.
+ {{{ 
+ umount /media/disk-1         //not always disk-1
+ }}}
+
+ 1.
+ {{{ 
+ mkfs.vfat -I /dev/sdb
+ }}}
