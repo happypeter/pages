@@ -1,0 +1,10 @@
+FrontPage<<BR>><<TableOfContents>>
+
+{{{
+pet@girl:~/lisp-lib/dictionaries-common$ ls
+debian-ispell.el  debian-ispell.elc  done  flyspell.el  flyspell.elc  ispell.el  ispell.elc
+}}}
+
+all you need to do is adding a '''require''' in ''.emacs''
+
+then '''M+x''' to see what is available for it

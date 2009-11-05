@@ -1,0 +1,62 @@
+FrontPage
+son of EmacsUse
+{{{
+root@girl:~# apt-get install emacs
+
+root@girl:~# apt-get install muse-el
+}}}
+bhl    change plain text to wiki html ...
+
+ * IkiwikiTip
+ * HtmlizeMode
+ * StyleSheet
+http://mwolson.org/projects/EmacsMuse.html
+
+
+
+check this http://www.linux.com/archive/feature/61208
+maybe I also need 
+{{{
+(add-to-list 'load-path "/home/scott/elisp/muse_latest/lisp")
+(require 'muse-mode)
+(require 'muse-html)
+(require 'muse-latex)
+(require 'muse-texinfo)
+(require 'muse-docbook)
+(require 'muse-book)
+
+}}}
+
+in ''.emacs''
+
+and here
+http://mwolson.org/projects/EmacsMuse.html#sec3
+I can get ''muse_latest''
+
+== ubuntu ==
+http://mwolson.org/projects/DebianPackages.html
+
+
+== succeed ==
+so now my ''.emacs'' is
+{{{
+     (setq muse-project-alist
+           '(("Website" ("~/Pages" :default "index")
+              (:base "html" :path "~/public_html")
+              (:base "docbook" :path "~/public_html/docbook"))))
+
+
+(put 'upcase-region 'disabled nil)
+
+(add-to-list 'load-path "/home/pet/muse_latest/lisp")
+(require 'muse-mode)
+(require 'muse-html)
+(require 'muse-latex)
+(require 'muse-texinfo)
+(require 'muse-docbook)
+(require 'muse-book)
+}}}
+then all I need to do is open ''~/Pages/index.muse''
+edit it and then '''C+c p''', done!
+
+ * to eable camelwords, all I need to do is add '''muse-wiki''' as required in ''.emacs''
