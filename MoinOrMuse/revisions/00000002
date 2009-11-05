@@ -1,0 +1,28 @@
+FrontPage<<BR>><<TableOfContents>>
+
+
+=== what to use? ===
+
+==== moin defect ====
+now i know EmacsUse, so as note-taking systerm moinmoin seems very defective:
+
+ * even the moin-mode works perfectly, I still need to use mouse to invoke emacs
+ * basic navigation is kind of OK, but if it is all done in text-mode, navigation can be faster
+ * so now I perfer to do thing within the frame of emacs, which means faster navigation, faster editing
+ * faster everything and awesomely many new fethers available through all kinds of mode and modes bonding
+ * but I need to gurantee muse format can be nicely trasfromed into, at least, html, 
+ * and it will be wonderful if other formats, like pdf docbook and moinmoin mediawiki ...
+==== EmacsMuse defect ====
+ * the code highlight is not available, while in text mode, and not so satisfying even in html format
+
+
+ * navigation in text mode is fast
+ * easy to pushlish a whole dir, which is very much a advantage over moin
+ * this is a great thing to have
+ {{{
+      
+TAB      Move to the next Wiki reference.
+
+S-TAB    Move to the previous Wiki reference.
+
+ }}}
