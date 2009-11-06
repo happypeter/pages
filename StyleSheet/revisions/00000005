@@ -1,0 +1,47 @@
+FrontPage<<BR>><<TableOfContents>>
+
+== the simple way ==
+
+see ''muse-html.el''
+
+I think this approach also powerful. but might be not so handy if you want to add ''footer'' ''header'' ...
+
+== more flexiable way ==
+
+refer to Quickstart.muse
+
+{{{
+pet@girl:~$ cp  lisp-lib/muse_peter/examples/mwolson/templates/  .emacs.d/muse
+
+pet@girl:~$ cp  lisp-lib/muse_peter/examples/mwolson/stylesheets/ /home/pet/Pages/
+
+}}}
+
+== trap ==
+when you modify sth, be sure to run this if you want to see the modification 
+{{{
+M-x muse-project-delete-output-files
+}}}
+
+and if you modify ''.el'' file, you need to restart emacs.
+
+with the below in ''.emacs'', everything works
+{{{
+
+(setq peter-style-sheet
+      (concat "<link rel=\"stylesheet\" type=\"text/css\""
+              " charset=\"utf-8\" media=\"all\""
+              " href=\"/home/pet/peter.css\" />"))
+
+(muse-derive-style "peter-xhtml" "xhtml"
+                   :header "~/.emacs.d/muse/header.html"
+                   :footer "~/.emacs.d/muse/footer.html"
+                   :style-sheet peter-style-sheet)
+
+}}}
+
+== example ==
+
+{{{
+root@girl:/home/pet/lisp-lib/muse_peter/lisp# vim muse-html.el 
+}}}

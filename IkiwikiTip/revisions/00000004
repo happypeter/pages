@@ -1,0 +1,21 @@
+FrontPage<<BR>><<TableOfContents>>
+
+{{{
+pet@girl:~$ sudo apt-get install ikiwiki
+}}}
+
+
+the search engine here, is sth I want
+http://ikiwiki.info/examples/softwaresite/
+
+== github ==
+http://ikiwiki.info/tips/github/
+I want a github page!!!
+
+== convertor ==
+here http://ikiwiki.info/users/joshtriplett/
+{{{
+git clone git://svcs.cs.pdx.edu/git/wiki2iki/moin2iki
+}}}
+
+I definately need to try this

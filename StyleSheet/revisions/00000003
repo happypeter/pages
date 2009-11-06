@@ -1,0 +1,18 @@
+FrontPage<<BR>><<TableOfContents>>
+
+== the simple way ==
+
+see ''muse-html.el''
+
+I think this approach also powerful. but might be not so handy if you want to add ''footer'' ''header'' ...
+
+== more flexiable way ==
+
+refer to Quickstart.muse
+
+{{{
+pet@girl:~$ cp  lisp-lib/muse_peter/examples/mwolson/templates/  .emacs.d/muse
+
+pet@girl:~$ cp  lisp-lib/muse_peter/examples/mwolson/stylesheets/ /home/pet/Pages/
+
+}}}
