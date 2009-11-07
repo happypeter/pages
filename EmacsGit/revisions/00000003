@@ -1,0 +1,21 @@
+FrontPage<<BR>><<TableOfContents>>
+
+so I first started here
+http://www.emacswiki.org/emacs/Git
+as I am in ubuntu 9.04 and using emacs22, I alredy has the basic git support. 
+{{{
+
+    * vc-git.el – a VersionControl backend (This is part of Emacs since version 22.2 (released in March 2008); see also [1] for experimental hacks by ttn.)
+
+Clarification here: Git, as in “Git support”, IS included in emacs 22 and 23. Certainly loading the above caused issues with Emacs 23.0. 
+}}}
+and form the above, I got a link to 
+http://github.com/tsgates/git-emacs
+which mostly works, try ''M-x'' to see the new commands provided.
+e.g ''gitk'' ''git-config-init'' and a lot others...
+
+== dd ==
+below is what I learned form http://xtalk.msk.su/~ott/en/writings/emacs-vcs/EmacsGit.html
+{{{
+Work with package always starts with execution of git-status command,
+}}}
