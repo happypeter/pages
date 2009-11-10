@@ -4,5 +4,5 @@
 rm -rf  */cache
 rm */edit-lock
 git add .
-git commit -a -m "default commit message"
+git commit -a -m "everything is ported to muse, so byebye moimoin"
 git push
